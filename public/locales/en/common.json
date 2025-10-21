@@ -27,7 +27,7 @@
     "emailLabel": "Email:",
     "phoneLabel": "Phone:",
     "nameValue": "Bryan España",
-    "ageValue": "25 years old",
+    "ageValue": "23 years old",
     "locationValue": "Guatemala"
   },
   "skills": {
@@ -72,6 +72,14 @@
       "taskManager": {
         "title": "Task Management App",
         "description": "Task management application with real-time collaboration and notifications."
+      },
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "Personal website built with Next.js, TypeScript and Tailwind CSS with dark mode support."
+      },
+      "socialApp": {
+        "title": "Social Network",
+        "description": "Social media application with real-time chat, posts and friend system."
       }
     }
   },

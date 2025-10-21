@@ -27,7 +27,7 @@
     "emailLabel": "Email:",
     "phoneLabel": "Teléfono:",
     "nameValue": "Bryan España",
-    "ageValue": "25 años",
+    "ageValue": "23 años",
     "locationValue": "Guatemala"
   },
   "skills": {
@@ -66,12 +66,20 @@
     "viewCode": "Ver código",
     "items": {
       "ecommerce": {
-        "title": "E-commerce Platform",
+        "title": "Plataforma E-commerce",
         "description": "Plataforma de comercio electrónico completa con carrito de compras, pagos integrados y panel de administración."
       },
       "taskManager": {
-        "title": "Task Management App",
+        "title": "Gestor de Tareas",
         "description": "Aplicación de gestión de tareas con colaboración en tiempo real y notificaciones."
+      },
+      "portfolio": {
+        "title": "Portfolio Personal",
+        "description": "Sitio web personal desarrollado con Next.js, TypeScript y Tailwind CSS con modo oscuro."
+      },
+      "socialApp": {
+        "title": "Red Social",
+        "description": "Aplicación de red social con chat en tiempo real, publicaciones y sistema de amigos."
       }
     }
   },
