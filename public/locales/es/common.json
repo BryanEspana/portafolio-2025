@@ -17,38 +17,118 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy un desarrollador apasionado por crear soluciones web innovadoras. Me especializo en tecnologías modernas y siempre estoy buscando nuevos desafíos."
+    "description": "Soy un desarrollador apasionado por crear soluciones web innovadoras. Me especializo en tecnologías modernas y siempre estoy buscando nuevos desafíos.",
+    "extendedDescription1": "Con más de 3 años de experiencia en desarrollo web, me especializo en crear aplicaciones modernas y escalables utilizando las últimas tecnologías.",
+    "extendedDescription2": "Mi enfoque está en escribir código limpio, mantenible y en seguir las mejores prácticas de desarrollo para entregar productos de alta calidad.",
+    "personalInfo": "Datos Personales",
+    "nameLabel": "Nombre:",
+    "ageLabel": "Edad:",
+    "locationLabel": "Ubicación:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Teléfono:",
+    "nameValue": "Bryan España",
+    "ageValue": "25 años",
+    "locationValue": "Guatemala"
   },
   "skills": {
     "title": "Habilidades",
-    "subtitle": "Tecnologías que domino"
+    "subtitle": "Tecnologías que domino",
+    "categories": {
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "tools": "Herramientas"
+    }
   },
   "experience": {
     "title": "Experiencia",
-    "subtitle": "Mi trayectoria profesional"
+    "subtitle": "Mi trayectoria profesional",
+    "jobs": {
+      "fullstack": {
+        "title": "Desarrollador Full Stack",
+        "company": "Tech Company",
+        "period": "2021 - Presente",
+        "description": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas."
+      },
+      "frontend": {
+        "title": "Desarrollador Frontend",
+        "company": "Digital Agency",
+        "period": "2019 - 2021",
+        "description": "Creación de interfaces de usuario modernas y responsivas."
+      }
+    }
   },
   "projects": {
     "title": "Proyectos",
     "subtitle": "Algunos de mis trabajos destacados",
     "viewProject": "Ver proyecto",
-    "viewCode": "Ver código"
+    "viewCode": "Ver código",
+    "items": {
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "Plataforma de comercio electrónico completa con carrito de compras, pagos integrados y panel de administración."
+      },
+      "taskManager": {
+        "title": "Task Management App",
+        "description": "Aplicación de gestión de tareas con colaboración en tiempo real y notificaciones."
+      }
+    }
   },
   "education": {
     "title": "Educación",
-    "subtitle": "Mi formación académica"
+    "subtitle": "Mi formación académica",
+    "items": {
+      "university": {
+        "degree": "Ingeniería en Ciencias y Sistemas",
+        "institution": "Universidad de San Carlos de Guatemala",
+        "period": "2017 - 2022",
+        "description": "Formación en desarrollo de software, algoritmos y estructuras de datos."
+      }
+    }
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Artículos y reflexiones",
-    "readMore": "Leer más"
+    "readMore": "Leer más",
+    "posts": {
+      "microservices": {
+        "title": "Construyendo Microservicios Escalables con Spring Boot",
+        "excerpt": "Aprende las mejores prácticas para construir arquitecturas de microservicios robustas y escalables.",
+        "date": "15 de Enero, 2024"
+      },
+      "mobile": {
+        "title": "Desarrollo Mobile Multiplataforma",
+        "excerpt": "Comparativa entre Flutter y React Native para el desarrollo de aplicaciones móviles.",
+        "date": "22 de Diciembre, 2023"
+      },
+      "devops": {
+        "title": "DevOps: De la Teoría a la Práctica",
+        "excerpt": "Implementa CI/CD efectivo y automatiza tus despliegues con herramientas modernas.",
+        "date": "10 de Noviembre, 2023"
+      }
+    }
   },
   "contact": {
     "title": "Contacto",
     "subtitle": "¡Hablemos!",
+    "infoTitle": "Información de Contacto",
+    "formTitle": "Envíame un mensaje",
+    "followMe": "Sígueme en:",
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "send": "Enviar mensaje"
+    "send": "Enviar mensaje",
+    "labels": {
+      "phone": "Teléfono",
+      "emailPersonal": "Email Personal",
+      "website": "Sitio Web"
+    },
+    "placeholders": {
+      "name": "Tu nombre completo",
+      "email": "tu@email.com",
+      "message": "Escribe tu mensaje aquí..."
+    }
   },
   "footer": {
     "rights": "Todos los derechos reservados"

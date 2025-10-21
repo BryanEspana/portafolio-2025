@@ -5,19 +5,19 @@ const Contact = () => {
   
   const contactInfo = [
     {
-      label: "Teléfono",
+      label: t('contact.labels.phone'),
       value: "+502 3659-7354",
       href: "tel:+50236597354",
       icon: "phone"
     },
     {
-      label: "Email Personal",
+      label: t('contact.labels.emailPersonal'),
       value: "bryanespana21550@gmail.com",
       href: "mailto:bryanespana21550@gmail.com",
       icon: "mail"
     },
     {
-      label: "Sitio Web",
+      label: t('contact.labels.website'),
       value: "www.bryanespana.dev",
       href: "https://www.bryanespana.dev",
       icon: "globe"
@@ -97,23 +97,23 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Información de Contacto</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">{t('contact.infoTitle')}</h3>
               
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
                     href={info.href}
-                    className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 group"
+                    className="flex items-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 group"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors">
                       <div className="text-primary">
                         {renderIcon(info.icon)}
                       </div>
                     </div>
                     <div className="ml-4">
-                      <h4 className="font-medium text-gray-900">{info.label}</h4>
-                      <p className="text-gray-600">{info.value}</p>
+                      <h4 className="font-medium text-gray-900 dark:text-white">{info.label}</h4>
+                      <p className="text-gray-600 dark:text-gray-300">{info.value}</p>
                     </div>
                   </a>
                 ))}
@@ -121,15 +121,15 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="font-medium text-gray-900 mb-4">Sígueme en:</h4>
-                <div className="flex space-x-4 text-gray-900">
+                <h4 className="font-medium text-gray-900 dark:text-white mb-4">{t('contact.followMe')}</h4>
+                <div className="flex space-x-4 text-gray-900 dark:text-white">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300"
+                      className="w-10 h-10 bg-gray-100 dark:bg-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors duration-300"
                     >
                       {renderIcon(social.icon)}
                     </a>
@@ -139,46 +139,46 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900">Envíame un mensaje</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">{t('contact.formTitle')}</h3>
               
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     {t('contact.name')}
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="Tu nombre completo"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    placeholder={t('contact.placeholders.name')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     {t('contact.email')}
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="tu@email.com"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    placeholder={t('contact.placeholders.email')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     {t('contact.message')}
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="Escribe tu mensaje aquí..."
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    placeholder={t('contact.placeholders.message')}
                   />
                 </div>
 

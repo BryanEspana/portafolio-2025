@@ -5,10 +5,10 @@ const Education = () => {
 
   const education = [
     {
-      degree: "Ingeniería en Sistemas",
-      institution: "Universidad de San Carlos de Guatemala",
-      period: "2018 - 2023",
-      description: "Enfoque en desarrollo de software y sistemas de información"
+      degree: t('education.items.university.degree'),
+      institution: t('education.items.university.institution'),
+      period: t('education.items.university.period'),
+      description: t('education.items.university.description')
     }
   ]
 

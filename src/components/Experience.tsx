@@ -5,16 +5,16 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Desarrollador Full Stack",
-      company: "Tech Company",
-      period: "2022 - Presente",
-      description: "Desarrollo de aplicaciones web modernas utilizando React, Node.js y bases de datos relacionales."
+      title: t('experience.jobs.fullstack.title'),
+      company: t('experience.jobs.fullstack.company'),
+      period: t('experience.jobs.fullstack.period'),
+      description: t('experience.jobs.fullstack.description')
     },
     {
-      title: "Desarrollador Frontend",
-      company: "Digital Agency",
-      period: "2021 - 2022",
-      description: "Creación de interfaces de usuario responsivas y optimizadas para diferentes dispositivos."
+      title: t('experience.jobs.frontend.title'),
+      company: t('experience.jobs.frontend.company'),
+      period: t('experience.jobs.frontend.period'),
+      description: t('experience.jobs.frontend.description')
     }
   ]
 

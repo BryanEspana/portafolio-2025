@@ -17,38 +17,118 @@
   },
   "about": {
     "title": "About me",
-    "description": "I'm a passionate developer focused on creating innovative web solutions. I specialize in modern technologies and I'm always looking for new challenges."
+    "description": "I'm a passionate developer focused on creating innovative web solutions. I specialize in modern technologies and I'm always looking for new challenges.",
+    "extendedDescription1": "With over 3 years of experience in web development, I specialize in creating modern and scalable applications using the latest technologies.",
+    "extendedDescription2": "My focus is on writing clean, maintainable code and following development best practices to deliver high-quality products.",
+    "personalInfo": "Personal Information",
+    "nameLabel": "Name:",
+    "ageLabel": "Age:",
+    "locationLabel": "Location:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "nameValue": "Bryan España",
+    "ageValue": "25 years old",
+    "locationValue": "Guatemala"
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Technologies I master"
+    "subtitle": "Technologies I master",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "tools": "Tools"
+    }
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "My professional journey"
+    "subtitle": "My professional journey",
+    "jobs": {
+      "fullstack": {
+        "title": "Full Stack Developer",
+        "company": "Tech Company",
+        "period": "2021 - Present",
+        "description": "Development of complete web applications using modern technologies."
+      },
+      "frontend": {
+        "title": "Frontend Developer",
+        "company": "Digital Agency",
+        "period": "2019 - 2021",
+        "description": "Creation of modern and responsive user interfaces."
+      }
+    }
   },
   "projects": {
     "title": "Projects",
     "subtitle": "Some of my featured work",
     "viewProject": "View project",
-    "viewCode": "View code"
+    "viewCode": "View code",
+    "items": {
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "Complete e-commerce platform with shopping cart, integrated payments and admin panel."
+      },
+      "taskManager": {
+        "title": "Task Management App",
+        "description": "Task management application with real-time collaboration and notifications."
+      }
+    }
   },
   "education": {
     "title": "Education",
-    "subtitle": "My academic background"
+    "subtitle": "My academic background",
+    "items": {
+      "university": {
+        "degree": "Computer Science and Systems Engineering",
+        "institution": "Universidad de San Carlos de Guatemala",
+        "period": "2017 - 2022",
+        "description": "Education in software development, algorithms and data structures."
+      }
+    }
   },
   "blog": {
     "title": "Blog", 
     "subtitle": "Articles and thoughts",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "posts": {
+      "microservices": {
+        "title": "Building Scalable Microservices with Spring Boot",
+        "excerpt": "Learn best practices for building robust and scalable microservices architectures.",
+        "date": "January 15, 2024"
+      },
+      "mobile": {
+        "title": "Cross-platform Mobile Development",
+        "excerpt": "Comparison between Flutter and React Native for mobile app development.",
+        "date": "December 22, 2023"
+      },
+      "devops": {
+        "title": "DevOps: From Theory to Practice",
+        "excerpt": "Implement effective CI/CD and automate your deployments with modern tools.",
+        "date": "November 10, 2023"
+      }
+    }
   },
   "contact": {
     "title": "Contact",
     "subtitle": "Let's talk!",
+    "infoTitle": "Contact Information",
+    "formTitle": "Send me a message",
+    "followMe": "Follow me on:",
     "name": "Name",
     "email": "Email", 
     "message": "Message",
-    "send": "Send message"
+    "send": "Send message",
+    "labels": {
+      "phone": "Phone",
+      "emailPersonal": "Personal Email",
+      "website": "Website"
+    },
+    "placeholders": {
+      "name": "Your full name",
+      "email": "your@email.com",
+      "message": "Write your message here..."
+    }
   },
   "footer": {
     "rights": "All rights reserved"

@@ -7,25 +7,25 @@ const Blog = () => {
   const posts = [
     {
       id: 1,
-      title: "Construyendo Microservicios Escalables con Spring Boot",
-      description: "Aprende las mejores prácticas para diseñar arquitecturas de microservicios robustas y escalables utilizando Spring Boot y Docker.",
-      date: "2024-03-15",
+      title: t('blog.posts.microservices.title'),
+      description: t('blog.posts.microservices.excerpt'),
+      date: t('blog.posts.microservices.date'),
       tags: ["Spring Boot", "Microservicios", "Docker"],
       readTime: "8 min",
     },
     {
       id: 2,
-      title: "Flutter vs React Native: Comparación Completa 2024",
-      description: "Análisis detallado de las dos frameworks más populares para desarrollo móvil multiplataforma, con casos de uso y rendimiento.",
-      date: "2024-02-28",
+      title: t('blog.posts.mobile.title'),
+      description: t('blog.posts.mobile.excerpt'),
+      date: t('blog.posts.mobile.date'),
       tags: ["Flutter", "React Native", "Mobile"],
       readTime: "12 min",
     },
     {
       id: 3,
-      title: "Implementando CI/CD con Azure DevOps",
-      description: "Guía paso a paso para configurar pipelines de integración y despliegue continuo en proyectos modernos.",
-      date: "2024-02-10",
+      title: t('blog.posts.devops.title'),
+      description: t('blog.posts.devops.excerpt'),
+      date: t('blog.posts.devops.date'),
       tags: ["DevOps", "CI/CD", "Azure"],
       readTime: "10 min",
     },
@@ -47,18 +47,18 @@ const Blog = () => {
             {posts.map((post) => (
               <article 
                 key={post.id} 
-                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-gray-900"
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-gray-900 dark:text-white"
               >
                 {/* Card Header */}
                 <div className="p-6 pb-0">
                   <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
                       <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       {post.date}
                     </div>
-                    <span className="text-sm text-gray-500">{post.readTime}</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">{post.readTime}</span>
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-3 line-clamp-2">
@@ -68,7 +68,7 @@ const Blog = () => {
 
                 {/* Card Content */}
                 <div className="px-6 pb-4">
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                     {post.description}
                   </p>
                   
@@ -76,7 +76,7 @@ const Blog = () => {
                     {post.tags.map((tag) => (
                       <span 
                         key={tag}
-                        className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                        className="px-2 py-1 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-300 text-xs rounded-full"
                       >
                         {tag}
                       </span>

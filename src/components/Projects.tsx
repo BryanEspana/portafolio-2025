@@ -5,16 +5,16 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma de comercio electrónico completa con panel de administración",
+      title: t('projects.items.ecommerce.title'),
+      description: t('projects.items.ecommerce.description'),
       image: "/placeholder-project.jpg",
       technologies: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/bryanespana",
       demo: "https://demo.example.com"
     },
     {
-      title: "Task Management App",
-      description: "Aplicación de gestión de tareas con colaboración en tiempo real",
+      title: t('projects.items.taskManager.title'),
+      description: t('projects.items.taskManager.description'),
       image: "/placeholder-project.jpg",
       technologies: ["Next.js", "TypeScript", "PostgreSQL"],
       github: "https://github.com/bryanespana",

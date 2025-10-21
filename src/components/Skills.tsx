@@ -5,23 +5,23 @@ const Skills = () => {
   
   const skillCategories = [
     {
-      title: "Lenguajes",
+      title: t('skills.categories.languages'),
       skills: ["JavaScript", "TypeScript", "Ruby", "Java", "Python", "Kotlin", "Dart"],
     },
     {
-      title: "Frontend / UI",
+      title: t('skills.categories.frontend'),
       skills: ["React", "Next.js", "Vue.js", "Angular", "Tailwind CSS", "Material UI", "Flutter"],
     },
     {
-      title: "Backend",
+      title: t('skills.categories.backend'),
       skills: ["Node.js", "Express", "Ruby on Rails", "Spring Boot", "FastAPI", "PostgreSQL", "MongoDB"],
     },
     {
-      title: "DevOps / Cloud",
+      title: t('skills.categories.devops'),
       skills: ["Docker", "AWS", "Azure", "CI/CD", "GitHub Actions", "Kubernetes"],
     },
     {
-      title: "Herramientas",
+      title: t('skills.categories.tools'),
       skills: ["Git", "VS Code", "Figma", "Postman", "Jest", "Cypress"],
     },
   ];
