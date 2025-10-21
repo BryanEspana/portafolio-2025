@@ -15,13 +15,7 @@ const Contact = () => {
       value: "bryanespana21550@gmail.com",
       href: "mailto:bryanespana21550@gmail.com",
       icon: "mail"
-    },
-    {
-      label: t('contact.labels.website'),
-      value: "www.bryanespana.dev",
-      href: "https://www.bryanespana.dev",
-      icon: "globe"
-    },
+    }
   ];
 
   const socialLinks = [

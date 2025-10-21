@@ -5,16 +5,22 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: t('experience.jobs.fullstack.title'),
-      company: t('experience.jobs.fullstack.company'),
-      period: t('experience.jobs.fullstack.period'),
-      description: t('experience.jobs.fullstack.description')
+      title: t('experience.jobs.experiencie3.title'),
+      company: t('experience.jobs.experiencie3.company'),
+      period: t('experience.jobs.experiencie3.period'),
+      description: t('experience.jobs.experiencie3.description')
     },
     {
-      title: t('experience.jobs.frontend.title'),
-      company: t('experience.jobs.frontend.company'),
-      period: t('experience.jobs.frontend.period'),
-      description: t('experience.jobs.frontend.description')
+      title: t('experience.jobs.experiencia2.title'),
+      company: t('experience.jobs.experiencia2.company'),
+      period: t('experience.jobs.experiencia2.period'),
+      description: t('experience.jobs.experiencia2.description')
+    },
+    {
+      title: t('experience.jobs.experiencia1.title'),
+      company: t('experience.jobs.experiencia1.company'),
+      period: t('experience.jobs.experiencia1.period'),
+      description: t('experience.jobs.experiencia1.description')
     }
   ]
 
