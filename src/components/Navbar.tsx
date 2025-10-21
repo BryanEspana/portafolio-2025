@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import ThemeSwitch from './ThemeSwitch'
+import { LanguageSwitch } from './LanguageSwitch'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,7 +18,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+    <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a 
@@ -31,7 +33,7 @@ const Navbar = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-primary font-medium transition-all duration-300 relative group px-2 py-1"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-all duration-300 relative group px-2 py-1"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {item.label}
@@ -40,10 +42,14 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-3">
+              <ThemeSwitch />
+              <LanguageSwitch />
+            </div>
+
             <button 
-              className="text-gray-700 hover:text-primary transition-all duration-300 transform hover:scale-110 focus:outline-none"
+              className="md:hidden text-gray-700 dark:text-gray-300 hover:text-primary transition-all duration-300 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,26 +63,25 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="py-4 space-y-2 bg-white/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg">
+          <div className="py-4 space-y-2 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg">
             {navItems.map((item, index) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-blue-50 transition-all duration-300 rounded-lg mx-2 font-medium"
+                className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary hover:bg-blue-50 dark:hover:bg-gray-800 transition-all duration-300 rounded-lg mx-2 font-medium"
                 onClick={() => setIsOpen(false)}
-                style={{
-                  transform: isOpen ? 'translateX(0)' : 'translateX(-20px)',
-                  opacity: isOpen ? 1 : 0,
-                  transitionDelay: `${index * 0.1}s`
-                }}
               >
                 {item.label}
               </a>
             ))}
+            
+            <div className="flex items-center justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700 mx-2">
+              <ThemeSwitch />
+              <LanguageSwitch />
+            </div>
           </div>
         </div>
       </div>

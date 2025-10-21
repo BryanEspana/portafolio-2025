@@ -1,17 +1,11 @@
 import { useTranslation } from 'next-i18next'
-import { LanguageSwitch } from './LanguageSwitch'
 
 const Hero = () => {
   const { t } = useTranslation('common')
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16 relative">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16 relative">
       <div className="container mx-auto px-4">
-        {/* Language Switch */}
-        <div className="flex justify-end mb-8 animate-fade-in-right">
-          <LanguageSwitch />
-        </div>
-
         <div className="text-center space-y-6">
           <p className="text-lg text-gray-600 mb-4 animate-fade-in-up opacity-0" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
             {t('hero.greeting')}
