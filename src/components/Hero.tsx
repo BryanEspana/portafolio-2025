@@ -7,11 +7,11 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-16 relative">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6">
-          <p className="text-lg text-gray-600 mb-4 animate-fade-in-up opacity-0" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 animate-fade-in-up opacity-0" style={{animationDelay: '0.1s', animationFillMode: 'forwards'}}>
             {t('hero.greeting')}
           </p>
           
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up opacity-0" style={{animationDelay: '0.2s', animationFillMode: 'forwards'}}>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in-up opacity-0" style={{animationDelay: '0.2s', animationFillMode: 'forwards'}}>
             Bryan España
           </h1>
           
@@ -19,7 +19,7 @@ const Hero = () => {
             {t('hero.title')}
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '0.4s', animationFillMode: 'forwards'}}>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in-up opacity-0" style={{animationDelay: '0.4s', animationFillMode: 'forwards'}}>
             {t('hero.subtitle')}
           </p>
 
@@ -45,7 +45,7 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
-          <a href="#about" className="block text-gray-600 hover:text-primary transition-colors duration-300">
+          <a href="#about" className="block text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>

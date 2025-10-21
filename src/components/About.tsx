@@ -4,24 +4,24 @@ const About = () => {
   const { t } = useTranslation('common')
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-white">
+    <section id="about" className="py-20 md:py-32 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 animate-fade-in-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white animate-fade-in-up">
             {t('about.title')}
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-12 animate-fade-in-up" style={{animationDelay: '0.1s'}}></div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 {t('about.description')}
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 Con más de 3 años de experiencia en desarrollo web, me especializo en 
                 crear aplicaciones modernas y escalables utilizando las últimas tecnologías.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Mi enfoque está en escribir código limpio, mantenible y en seguir las 
                 mejores prácticas de desarrollo para entregar productos de alta calidad.
               </p>
@@ -42,14 +42,14 @@ const About = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in-right">
-              <h3 className="text-xl font-semibold mb-6 text-gray-900 flex items-center">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in-right">
+              <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white flex items-center">
                 <svg className="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 Datos Personales
               </h3>
-              <ul className="space-y-4 text-gray-600">
+              <ul className="space-y-4 text-gray-600 dark:text-gray-300">
                 <li className="flex items-center hover:text-primary transition-colors duration-300">
                   <svg className="w-4 h-4 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />

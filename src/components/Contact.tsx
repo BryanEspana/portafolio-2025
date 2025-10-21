@@ -83,21 +83,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-gray-50">
+    <section id="contact" className="py-20 md:py-32 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
             {t('contact.title')}
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mb-4"></div>
-          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 dark:text-gray-300 mb-16 max-w-2xl mx-auto">
             {t('contact.subtitle')}
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900">Información de Contacto</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Información de Contacto</h3>
               
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
