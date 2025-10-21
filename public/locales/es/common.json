@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades", 
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy",
+    "title": "Desarrollador Full Stack",
+    "subtitle": "Desarrollador apasionado por crear soluciones innovadoras y escalables.",
+    "cta": "Ver mi trabajo",
+    "contact": "Contactar"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador apasionado por crear soluciones web innovadoras. Me especializo en tecnologías modernas y siempre estoy buscando nuevos desafíos."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías que domino"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de mis trabajos destacados",
+    "viewProject": "Ver proyecto",
+    "viewCode": "Ver código"
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Mi formación académica"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artículos y reflexiones",
+    "readMore": "Leer más"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¡Hablemos!",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar mensaje"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "languages": {
+    "spanish": "Español",
+    "english": "English"
+  }
+}

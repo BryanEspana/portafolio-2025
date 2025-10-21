@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience", 
+    "projects": "Projects",
+    "education": "Education",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi! I'm",
+    "title": "Full Stack Developer",
+    "subtitle": "Creating amazing web experiences with modern technologies",
+    "cta": "View my work",
+    "contact": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm a passionate developer focused on creating innovative web solutions. I specialize in modern technologies and I'm always looking for new challenges."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I master"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of my featured work",
+    "viewProject": "View project",
+    "viewCode": "View code"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background"
+  },
+  "blog": {
+    "title": "Blog", 
+    "subtitle": "Articles and thoughts",
+    "readMore": "Read more"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk!",
+    "name": "Name",
+    "email": "Email", 
+    "message": "Message",
+    "send": "Send message"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "languages": {
+    "spanish": "Español",
+    "english": "English"
+  }
+}
