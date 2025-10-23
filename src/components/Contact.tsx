@@ -26,7 +26,7 @@ const Contact = () => {
     },
     {
       platform: "LinkedIn", 
-      href: "https://linkedin.com/in/bryanespana",
+      href: "https://www.linkedin.com/in/bryan-espa%C3%B1a-62094a212/",
       icon: "linkedin"
     },
   ];
@@ -145,7 +145,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                     placeholder={t('contact.placeholders.name')}
                   />
                 </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                     placeholder={t('contact.placeholders.email')}
                   />
                 </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white text-black rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                     placeholder={t('contact.placeholders.message')}
                   />
                 </div>
@@ -181,7 +181,6 @@ const Contact = () => {
                   className="w-full bg-primary text-white py-3 px-6 rounded-lg hover:bg-primary-600 transition-colors duration-300 flex items-center justify-center space-x-2"
                 >
                   <span>{t('contact.send')}</span>
-                  {renderIcon('send')}
                 </button>
               </form>
             </div>
