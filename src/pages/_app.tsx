@@ -1,9 +1,14 @@
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
+import { AuthProvider } from '../contexts/AuthContext'
 import '../app/globals.css'
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <AuthProvider>
+      <Component {...pageProps} />
+    </AuthProvider>
+  )
 }
 
 export default appWithTranslation(App)
