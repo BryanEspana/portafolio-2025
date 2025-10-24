@@ -24,20 +24,6 @@ const About = () => {
                 {t('about.extendedDescription2')}
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-                  React
-                </span>
-                <span className="bg-accent text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-accent-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-                  Next.js
-                </span>
-                <span className="bg-secondary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-secondary-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-                  TypeScript
-                </span>
-                <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-                  Node.js
-                </span>
-              </div>
             </div>
             
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in-right">

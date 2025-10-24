@@ -9,6 +9,12 @@ const Education = () => {
       institution: t('education.items.university.institution'),
       period: t('education.items.university.period'),
       description: t('education.items.university.description')
+    },
+    {
+      degree: t('education.items.highschool.degree'),
+      institution: t('education.items.highschool.institution'),
+      period: t('education.items.highschool.period'),
+      description: t('education.items.highschool.description')
     }
   ]
 

@@ -45,17 +45,23 @@
     "title": "Experience",
     "subtitle": "My professional journey",
     "jobs": {
-      "fullstack": {
-        "title": "Full Stack Developer",
-        "company": "Tech Company",
-        "period": "2021 - Present",
-        "description": "Development of complete web applications using modern technologies."
+      "experiencie3": {
+        "title": "Web Developer",
+        "company": "INFILE GT",
+        "period": "2023 - Present",
+        "description": "Development of complete web applications using modern technologies, DevOps implementation and development best practices."
       },
-      "frontend": {
+      "experiencia2": {
         "title": "Frontend Developer",
-        "company": "Digital Agency",
-        "period": "2019 - 2021",
-        "description": "Creation of modern and responsive user interfaces."
+        "company": "INFILE GT",
+        "period": "2021 - 2023",
+        "description": "Creation of modern and responsive user interfaces for both web and mobile applications, web service API implementation."
+      },
+      "experiencia1": {
+        "title": "Mobile Application Developer",
+        "company": "Quasar Solutions LLC",
+        "period": "Jul 2024 - Nov 2024",
+        "description": "Temporary position at Quasar Solutions LLC, where I had the opportunity to develop a mobile application for Banco de Guatemala, project built with Flutter for iOS and Android."
       }
     }
   },
@@ -84,14 +90,20 @@
     }
   },
   "education": {
-    "title": "Education",
-    "subtitle": "My academic background",
+    "title": "Educación",
+    "subtitle": "Mi formación académica",
     "items": {
       "university": {
-        "degree": "Computer Science and Systems Engineering",
-        "institution": "Universidad de San Carlos de Guatemala",
-        "period": "2017 - 2022",
-        "description": "Education in software development, algorithms and data structures."
+        "degree": "INGENIERÍA EN CIENCIA DE LA COMPUTACIÓN Y TECNOLOGÍAS DE LA INFORMACIÓN",
+        "institution": "Universidad del Valle de Guatemala",
+        "period": "2021 - Presente",
+        "description": "Formación enfocada en el desarrollo de software, análisis de datos y diseño de soluciones tecnológicas mediante la aplicación de ciencia, ingeniería y matemáticas. Con énfasis en la innovación, la inclusión y la especialización en áreas como desarrollo de videojuegos, seguridad informática e inteligencia artificial."
+      },
+      "highschool": {
+        "degree": "BACHILLERATO EN COMPUTACIÓN Y CIENCIAS DE LA INFORMACIÓN",
+        "institution": "Colegio La Patria de Guatemala",
+        "period": "2015 - 2021",
+        "description": "Formación enfocada en el desarrollo de habilidades técnicas y blandas, con énfasis en la programación y el trabajo en equipo."
       }
     }
   },
