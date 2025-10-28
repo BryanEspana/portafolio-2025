@@ -39,6 +39,36 @@ CREATE POLICY "Proyectos son públicos para lectura" ON projects
 CREATE POLICY "Solo usuarios autenticados pueden modificar proyectos" ON projects
   FOR ALL USING (auth.role() = 'authenticated');
 
+-- Crear tabla de experiencias laborales
+CREATE TABLE IF NOT EXISTS experiences (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  title TEXT NOT NULL,
+  company TEXT NOT NULL,
+  period TEXT NOT NULL,
+  description TEXT NOT NULL,
+  display_order INTEGER NOT NULL DEFAULT 0,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Crear trigger para updated_at en experiences
+CREATE TRIGGER update_experiences_updated_at 
+  BEFORE UPDATE ON experiences 
+  FOR EACH ROW 
+  EXECUTE FUNCTION update_updated_at_column();
+
+-- Habilitar Row Level Security (RLS) para experiences
+ALTER TABLE experiences ENABLE ROW LEVEL SECURITY;
+
+-- Política para lectura pública de experiencias
+CREATE POLICY "Experiencias son públicas para lectura" ON experiences
+  FOR SELECT USING (true);
+
+-- Política para insertar, actualizar y eliminar experiencias (permitir todas las operaciones)
+-- Nota: La seguridad se maneja en el frontend con el sistema de autenticación propio
+CREATE POLICY "Permitir todas las operaciones en experiencias" ON experiences
+  FOR ALL USING (true);
+
 -- Insertar algunos proyectos de ejemplo
 INSERT INTO projects (title, description, technologies, images, date, github_url, live_url) VALUES
 (
