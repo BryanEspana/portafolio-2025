@@ -20,11 +20,7 @@ const nextConfig = {
       }
     }
     return config
-  },
-  // Habilitar Fast Refresh explícitamente
-  experimental: {
-    fastRefresh: true,
-  },
+  }
 }
 
 module.exports = nextConfig
